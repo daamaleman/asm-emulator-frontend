@@ -1,5 +1,6 @@
-<script setup>
+¿<script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import EstadoBackend from '@/components/EstadoBackend.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/emulador">Emulador</RouterLink>
       <RouterLink to="/traductor">Traductor a C++</RouterLink>
     </nav>
+    <EstadoBackend />
   </header>
   <main class="contenido">
     <RouterView />
