@@ -11,4 +11,14 @@ export async function obtenerEstado() {
   return data
 }
 
+export async function emular(code, initialRegisters) {
+  const { data } = await http.post('/emulate', { code, initialRegisters })
+  return data
+}
+
+export async function obtenerEjemplos() {
+  const { data } = await http.get('/examples')
+  return data
+}
+
 export default http
